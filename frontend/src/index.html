@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Youtube Downloader</title>
+
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <main class="main-container">
+
+            <div class="main-text-container">
+                <h1 class="main-title">Youtube Downloader</h1>
+                <h2 class="main-subtitle">Descargar videos y audios de YouTube</h2>
+            </div>
+
+            <div class="input-container">
+                <p class="main-description">Introduce la URL de un video de YouTube para descargar su contenido:</p>
+                <input type="text" id="url" />
+            </div>
+
+            <p class="text">Seleccione el formato de descarga:</p>
+
+            <div class="buttons-container">
+
+                <div class = "button-container">
+                        <button id="download-button" onclick="downloadContent('video')">Download Video</button>
+                </div>
+
+                <div class="button-container">
+                        <button id="download-audio-button" onclick="downloadContent('audio')">Download Audio</button>
+                </div>
+            </div>
+
+        </main>
+    </body>
+</html>
