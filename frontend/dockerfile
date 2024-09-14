@@ -1,0 +1,20 @@
+# Usa una imagen base de Node.js
+FROM node:14
+
+# Crea un directorio de trabajo para el frontend
+WORKDIR /usr/src/app
+
+# Copia los archivos de configuración de npm
+COPY package*.json ./
+
+# Instala las dependencias
+RUN npm install
+
+# Copia el código fuente del frontend
+COPY . .
+
+# Expone el puerto 3000
+EXPOSE 3000
+
+# Comando para iniciar el frontend
+CMD ["npm", "start"]
