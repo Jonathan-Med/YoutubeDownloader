@@ -46,7 +46,6 @@ public class DownloadService {
                 throw new RuntimeException("Failed to download content: Output file does not exist.");
             }
         } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
             throw new RuntimeException("Failed to download content: " + e.getMessage());
         }
     }
