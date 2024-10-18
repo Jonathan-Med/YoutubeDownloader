@@ -9,3 +9,5 @@ en este caso puede ser video o audio.</p>
 <p>En la segunda rama esta el proyecto listo para agregarlos en contenedores, con sus respectivos dockerfiles. En ese caso la aplicación frontend requiere de un server.js
 que sirve para conectar el fronten con el puerto para que se pueda consultar la página.</p>
 <p>No se agregarón muchas funcionalidades debido a que el proposito principal era otro.</p>
+
+![inicio](https://github.com/Jonathan-Med/YoutubeDownloader/blob/main/inicio.png)
