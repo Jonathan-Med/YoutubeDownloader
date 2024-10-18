@@ -20,7 +20,7 @@ public class DownloadController {
 
     @GetMapping("/video")
     public ResponseEntity<InputStreamResource> downloadVideo(@RequestParam String url) {
-        InputStreamResource videoStream = downloadService.download(url, "b");
+        InputStreamResource videoStream = downloadService.download(url, "bestvideo+bestaudio");
         HttpHeaders headers = new HttpHeaders();
         headers.add(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=video.mp4");
         return ResponseEntity.ok()
